@@ -306,3 +306,4 @@ pyrightconfig.json
 
 # API Keys
 src/config
+token.dat
