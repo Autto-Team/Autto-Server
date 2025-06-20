@@ -1,0 +1,11 @@
+app:
+  name: autto-server
+  platform: python
+  options:
+    build: .
+    start: poetry run uvicorn src.main:app --host 0.0.0.0 --port $PORT
+    env:
+      - name: PORT
+        value: 8000
+      - name: PYTHONUNBUFFERED
+        value: "1"
