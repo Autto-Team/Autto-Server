@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from src.service.stockService import get_my_stock_info, get_profit_rate
+from src.autto.service.stockService import get_my_stock_info, get_profit_rate
 
 router = APIRouter()
 

@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from src.service.orderRecordService import get_trading_records
+from src.autto.service.orderRecordService import get_trading_records
 
 router = APIRouter()
 

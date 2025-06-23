@@ -305,5 +305,5 @@ pyrightconfig.json
 
 
 # API Keys
-src/config
+src/autto/config
 token.dat

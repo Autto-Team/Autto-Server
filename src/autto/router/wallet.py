@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from src.service.walletService import get_wallet_info
+from src.autto.service.walletService import get_wallet_info
 
 router = APIRouter()
 
