@@ -5,12 +5,14 @@ options:
   env:
     - name: PYTHONUNBUFFERED
       value: "1"
+
   build:
     install: |
       curl -sSL https://install.python-poetry.org | python3 -
       export PATH="$HOME/.local/bin:$PATH"
       poetry config virtualenvs.create false
       poetry install --no-interaction --no-ansi
+
   start: |
     export PATH="$HOME/.local/bin:$PATH"
     poetry run uvicorn src.autto.main:app --host 0.0.0.0 --port 8000
