@@ -13,7 +13,7 @@ ENV PATH="/root/.local/bin:$PATH"
 WORKDIR /app
 
 # 프로젝트 파일 복사
-COPY . .
+COPY src ./src
 
 # virtualenv 사용 안 하도록 설정
 RUN poetry config virtualenvs.create false
