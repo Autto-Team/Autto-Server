@@ -24,4 +24,4 @@ RUN poetry config virtualenvs.create false \
 EXPOSE 8000
 
 # 앱 실행
-CMD ["poetry", "run", "uvicorn", "src.autto.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "src.autto.main:app", "--host", "0.0.0.0", "--port", "8000"]
