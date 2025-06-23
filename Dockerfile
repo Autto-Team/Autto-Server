@@ -29,4 +29,4 @@ ENV PYTHONPATH=/app/src
 EXPOSE 8000
 
 # 컨테이너 시작 명령어
-CMD ["uvicorn", "autto.main:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["uvicorn", "autto.main:app", "--host", "0.0.0.0", "--port", "8000"]
